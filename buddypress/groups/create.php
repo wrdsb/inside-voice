@@ -5,7 +5,10 @@
  * @package BuddyPress
  * @subpackage bp-legacy
  */
+?>
+<?php get_template_part( 'header', 'groups' ); ?>
 
+<?php
 /**
  * Fires at the top of the groups creation template file.
  *

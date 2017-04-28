@@ -7,7 +7,6 @@
  */
 
 ?>
-
 <div class="item-list-tabs no-ajax" id="subnav" aria-label="<?php esc_attr_e( 'Member secondary navigation', 'buddypress' ); ?>" role="navigation">
 	<ul>
 		<?php bp_get_options_nav(); ?>
@@ -70,3 +69,4 @@ endswitch; ?>
  * @since 1.1.0
  */
 do_action( 'bp_after_profile_content' ); ?>
+

@@ -56,11 +56,11 @@
 					<div class="mdl-layout-spacer"></div>
 					<nav class="mdl-navigation">
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">home</i> Home</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">place</i> My Places</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">group</i> Groups</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">account_balance</i> Services</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">import_contacts</i> Guides</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">contacts</i> 411</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="<?php echo get_ivoice_member_url('places'); ?>"><i class="material-icons">place</i> My Places</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/groups/"><i class="material-icons">group</i> Groups</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/services/"><i class="material-icons">account_balance</i> Services</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/guides/"><i class="material-icons">import_contacts</i> Guides</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/members"><i class="material-icons">contacts</i> 411</a>
 					</nav>
 					<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
 						<label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
@@ -79,21 +79,3 @@
 						<span class="mdl-layout-title"><?php echo get_the_title(); ?></span>
 					<?php endif; ?>
 				</div>
-			</header>
-			<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title">Your Name</span>
-				<nav class="mdl-navigation">
-					<a class="mdl-navigation__link" href=""><i class="material-icons">notifications</i>&nbsp;&nbsp;&nbsp;Notifications</a>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">message</i>&nbsp;&nbsp;&nbsp;Messages</a>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">announcement</i>&nbsp;&nbsp;&nbsp;News</a>
-					<div class="insidevoice-drawer-separator"></div>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">contacts</i>&nbsp;&nbsp;&nbsp;My Connections</a>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">group</i>&nbsp;&nbsp;&nbsp;My Groups</a>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">forum</i>&nbsp;&nbsp;&nbsp;My Forums</a>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">place</i>&nbsp;&nbsp;&nbsp;My Places</a>
-					<div class="insidevoice-drawer-separator"></div>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">account_circle</i>&nbsp;&nbsp;&nbsp;My Profile</a>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">settings</i>&nbsp;&nbsp;&nbsp;My Settings</a>
-					<a class="mdl-navigation__link" href=""><i class="material-icons">power_settings_new</i>&nbsp;&nbsp;&nbsp;Log out</a>
-				</nav>
-			</div>

@@ -13,6 +13,8 @@
  */
 
 get_header(); ?>
+                        </header>
+                        <?php get_template_part( 'drawer' ); ?>
 
 <main class="mdl-layout__content">
 	<div class="mdl-grid">

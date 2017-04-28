@@ -7,18 +7,10 @@
  */
 
 ?>
-
+<?php get_template_part( 'header', 'groups' ); ?>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--8-col">
 <div id="buddypress">
-
-	<?php
-
-	/**
-	 * Fires before the display of member home content.
-	 *
-	 * @since 1.2.0
-	 */
-	do_action( 'bp_before_member_home_content' ); ?>
-
 	<div id="item-header" role="complementary">
 
 		<?php
@@ -119,3 +111,14 @@
 	do_action( 'bp_after_member_home_content' ); ?>
 
 </div><!-- #buddypress -->
+</div>
+<div class="mdl-cell mdl-cell--4-col">
+<?php bp_get_template_part( 'common/search/dir-search-form' ); ?>
+</div>
+</div>
+
+                </main><!-- #main -->
+        </div><!-- #primary -->
+</div><!-- #content -->
+
+

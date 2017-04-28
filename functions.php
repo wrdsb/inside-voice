@@ -143,3 +143,60 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 add_filter('show_admin_bar', '__return_false');
+
+function get_ivoice_username() {
+	return bp_core_get_username( get_current_user_id() );
+}
+
+function get_ivoice_member_url( $target = 'root') {
+	switch ($target) {
+		case 'root':
+			return '/members/'. get_ivoice_username();
+			break;
+		case 'notifications':
+			return '/members/'. get_ivoice_username() .'/notifications/';
+			break;
+		case 'messages':
+			return '/members/'. get_ivoice_username() .'/messages/';
+			break;
+		case 'activity':
+			return '/members/'. get_ivoice_username() .'/activity/';
+			break;
+		case 'news':
+			return '/';
+			break;
+		case 'connections':
+			return '/members/'. get_ivoice_username() .'/friends/';
+			break;
+		case 'friends':
+			return '/members/'. get_ivoice_username() .'/friends/';
+			break;
+		case 'groups':
+			return '/members/'. get_ivoice_username() .'/groups/';
+			break;
+		case 'forums':
+			return '/members/'. get_ivoice_username() .'/forums/';
+			break;
+		case 'places':
+			return '/members/'. get_ivoice_username() .'/blogs/';
+			break;
+		case 'blogs':
+			return '/members/'. get_ivoice_username() .'/blogs/';
+			break;
+		case 'profile':
+			return '/members/'. get_ivoice_username() .'/profile/';
+			break;
+		case 'edit':
+			return '/members/'. get_ivoice_username() .'/profile/edit/';
+			break;
+		default:
+			return '/members/'. get_ivoice_username();
+			break;
+	}
+}
+
+function get_ivoice_member_name() {
+	return 'My Name';
+}
+
+
