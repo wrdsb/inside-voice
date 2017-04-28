@@ -9,39 +9,21 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php inside_voice_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'inside-voice' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'inside-voice' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php inside_voice_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+<div id="post-<?php the_ID(); ?>" <?php post_class( 'mdl-card mdl-shadow--8dp' ); ?> style="width:100%">
+	<div class="mdl-card__menu" style="display:flex; box-sizing:border-box; align-items:center; background-color:#0D47A1">
+		<span style="color:white;"><i class="material-icons">info</i></span>
+	</div>
+	<div class="mdl-card__title mdl-card--expand" style="background-color:#0D47A1">
+		<h2>
+			<div class="mdl-card__title-text" style="color:white"><?php echo get_the_title() ?></div>
+			<div class="mdl-card__subtitle-text" style="color:white"><?php echo get_the_date('F j, Y') .' at '. get_the_time('g:i a') ?></div>
+		</h2>
+	</div>
+	<div class="mdl-card__supporting-text">
+		<?php the_excerpt(); ?>
+	</div>
+	<div class="mdl-card__actions mdl-card--border">
+		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="color:#0D47A1" href="'. get_permalink($post->ID) . '">Read Full Post</a>
+	</div>
+</div><!-- #post-## -->
+<p></p>
