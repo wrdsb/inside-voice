@@ -6,14 +6,9 @@
  *
  * @package Inside_Voice
  */
+?>
 
-get_header(); ?>
-                        </header>
-                        <?php get_template_part( 'drawer' ); ?>
-
-<div id="content" class="site-content">
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_header(); ?>
 
 		<?php
 		if ( have_posts() ) : ?>
@@ -43,9 +38,4 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
-</div><!-- #content -->
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer();

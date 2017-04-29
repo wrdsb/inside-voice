@@ -6,14 +6,9 @@
  *
  * @package Inside_Voice
  */
+?>
 
-get_header(); ?>
-                        </header>
-                        <?php get_template_part( 'drawer' ); ?>
-
-<div id="content" class="site-content">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_header(); ?>
 
 		<?php
 		while ( have_posts() ) : the_post();
@@ -30,9 +25,4 @@ get_header(); ?>
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- #content -->
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer();

@@ -6,10 +6,3 @@
         <?php endif; ?>
         <a href="/groups/create/" class="mdl-layout__tab">Create a Group</a>
 </div>
-</header>
-<?php get_template_part( 'drawer' ); ?>
-
-<div id="content" class="site-content">
-        <div id="primary" class="content-area">
-                <main id="main" class="site-main" role="main">
-

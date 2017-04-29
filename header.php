@@ -79,3 +79,8 @@
 						<span class="mdl-layout-title"><?php echo get_the_title(); ?></span>
 					<?php endif; ?>
 				</div>
+			</header>
+
+			<?php get_template_part( 'drawer' ); ?>
+
+			<main id="main" class="site-main" role="main">

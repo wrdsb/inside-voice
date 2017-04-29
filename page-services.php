@@ -11,12 +11,10 @@
  *
  * @package Inside_Voice
  */
+?>
 
-get_header(); ?>
-                        </header>
-                        <?php get_template_part( 'drawer' ); ?>
+<?php get_header(); ?>
 
-      <main class="mdl-layout__content">
   			<div class="mdl-grid">
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
@@ -158,6 +156,4 @@ get_header(); ?>
   				</div>
   			</div>
 
-
-<?php
-get_footer();
+<?php get_footer();

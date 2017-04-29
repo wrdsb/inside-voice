@@ -8,8 +8,8 @@
  *
  * @package Inside_Voice
  */
-
 ?>
+
 <footer class="mdl-mega-footer">
 	<div class="mdl-mega-footer--top-section">
 		<div class="mdl-mega-footer--drop-down-section">
@@ -95,9 +95,9 @@
 	</div>
 </footer>
 
-</main>
-</div>
-<?php wp_footer(); ?>
-<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</body>
+			</main>
+		</div> <!-- #page .mdl-layout -->
+		<?php wp_footer(); ?>
+		<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	</body>
 </html>
