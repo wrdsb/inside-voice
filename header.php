@@ -53,8 +53,14 @@
 
 			<header id="masthead" class="mdl-layout__header" role="banner">
 				<div class="mdl-layout__header-row" id="top-header">
+					<!-- Title -->
+					<?php if ( is_front_page() && is_home() ) : ?>
+						<span class="mdl-layout-title"><?php bloginfo( 'name' ); ?></span>
+					<?php else : ?>
+						<span class="mdl-layout-title"><?php echo get_the_title(); ?></span>
+					<?php endif; ?>
 					<div class="mdl-layout-spacer"></div>
-					<nav class="mdl-navigation">
+					<nav class="mdl-navigation mdl-cell--hide-tablet mdl-cell--hide-phone">
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">home</i> Home</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="<?php echo get_ivoice_member_url('places'); ?>"><i class="material-icons">place</i> My Places</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/groups/"><i class="material-icons">group</i> Groups</a>
@@ -70,14 +76,6 @@
 							<input class="mdl-textfield__input" type="text" id="search-field">
 						</div>
 					</div>
-				</div>
-				<div class="mdl-layout__header-row">
-					<!-- Title -->
-					<?php if ( is_front_page() && is_home() ) : ?>
-						<span class="mdl-layout-title"><?php bloginfo( 'name' ); ?></span>
-					<?php else : ?>
-						<span class="mdl-layout-title"><?php echo get_the_title(); ?></span>
-					<?php endif; ?>
 				</div>
 			</header>
 
