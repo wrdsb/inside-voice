@@ -54,8 +54,8 @@
 			<header id="masthead" class="mdl-layout__header" role="banner">
 				<div class="mdl-layout__header-row" id="top-header">
 					<!-- Title -->
-					<?php if ( is_front_page() && is_home() ) : ?>
-						<span class="mdl-layout-title"><?php bloginfo( 'name' ); ?></span>
+					<?php if ( is_front_page() || is_home() ) : ?>
+						<span class="mdl-layout-title">Home</span>
 					<?php else : ?>
 						<span class="mdl-layout-title"><?php echo get_the_title(); ?></span>
 					<?php endif; ?>
@@ -66,7 +66,7 @@
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/groups/"><i class="material-icons">group</i> Groups</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/services/"><i class="material-icons">account_balance</i> Services</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/guides/"><i class="material-icons">import_contacts</i> Guides</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/members"><i class="material-icons">contacts</i> 411</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/directory"><i class="material-icons">recent_actors</i> 411</a>
 					</nav>
 					<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
 						<label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
