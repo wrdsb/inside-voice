@@ -162,6 +162,7 @@
         </div>
 
         <div class="mdl-layout__tab-panel" id="discussion">
+          <img src="<?php echo get_template_directory_uri(); ?>/discussion-example.jpg" width="100%" />
         </div>
 
         <div class="mdl-layout__tab-panel" id="calendar">
