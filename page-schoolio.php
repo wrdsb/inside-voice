@@ -57,13 +57,13 @@
 					<?php if ( is_front_page() || is_home() ) : ?>
 						<span class="mdl-layout-title">Home</span>
 					<?php else : ?>
-						<span class="mdl-layout-title">Schoolio</span>
+						<span class="mdl-layout-title">Somewhere Public School</span>
 					<?php endif; ?>
 					<div class="mdl-layout-spacer"></div>
 					<nav class="mdl-navigation mdl-cell--hide-tablet mdl-cell--hide-phone">
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">home</i> Home</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="<?php echo get_ivoice_member_url('places'); ?>"><i class="material-icons">place</i> My Places</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/groups/"><i class="material-icons">group</i> Groups</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/my-places/"><i class="material-icons">place</i> My Places</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/all-groups/"><i class="material-icons">group</i> Groups</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/services/"><i class="material-icons">account_balance</i> Services</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/guides/"><i class="material-icons">import_contacts</i> Guides</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/directory"><i class="material-icons">recent_actors</i> 411</a>
@@ -101,7 +101,25 @@
                 </div>
                 <div class="mdl-card__title mdl-card--expand" style="background-color:#009688">
                   <h2>
-                    <div class="mdl-card__title-text" style="color:white">Some Message from School Admin</div>
+                    <div class="mdl-card__title-text" style="color:white">Message from School Admin</div>
+                    <div class="mdl-card__subtitle-text" style="color:white">April 26, 2017 at 11:51 am</div>
+                  </h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <p>This is where the post excerpt goes. It can be kinda long, or short. It might even be the whole content of the post. Then again it may not. That way is a very nice way. It's pleasant down that way too! Of course, people do go both ways. That's the trouble. I can't make up my mind. I haven't got a brain. Only straw [&hellip;]</p>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="color:#009688" href="'. get_permalink($post->ID) . '">Read Full Post</a>
+                </div>
+              </div><!-- #post-## -->
+              <p></p>
+              <div id="post-4152" class="mdl-card mdl-shadow--8dp post-4152 post type-post status-publish format-standard hentry category-its category-news" style="width:100%">
+                <div class="mdl-card__menu" style="display:flex; box-sizing:border-box; align-items:center; background-color:#009688">
+                  <span style="color:white;"><i class="material-icons">info</i></span>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" style="background-color:#009688">
+                  <h2>
+                    <div class="mdl-card__title-text" style="color:white">Message 2 from School Admin</div>
                     <div class="mdl-card__subtitle-text" style="color:white">April 26, 2017 at 11:51 am</div>
                   </h2>
                 </div>
@@ -162,24 +180,19 @@
         </div>
 
         <div class="mdl-layout__tab-panel" id="discussion">
-          <img src="<?php echo get_template_directory_uri(); ?>/discussion-example.jpg" width="100%" />
+          <img src="<?php echo get_template_directory_uri(); ?>/material-design-forum-full.gif" width="100%" />
         </div>
 
         <div class="mdl-layout__tab-panel" id="calendar">
-          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--8-col">
-              <img src="<?php echo get_template_directory_uri(); ?>/calendar-example.png" width="100%" />
-            </div>
-            <div class="mdl-cell mdl-cell--4-col">
-              <img src="<?php echo get_template_directory_uri(); ?>/calendar-example.jpg" width="100%" />
-            </div>
-          </div>
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=googleapps.wrdsb.ca_p103vo5u34ilmtf0mvr600q60s%40group.calendar.google.com&amp;color=%23182C57&amp;src=googleapps.wrdsb.ca_tfmv2qk1779181ronae9uk6988%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FToronto" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
 
         <div class="mdl-layout__tab-panel" id="files">
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5Q4pOUlHVbYbUtJcXExTzVUZVE#list" style="width:100%; height:600px; border:0"></iframe>
         </div>
 
         <div class="mdl-layout__tab-panel" id="members">
+          <img src="<?php echo get_template_directory_uri(); ?>/members.png" width="100%" />
         </div>
 
         <footer class="mdl-mega-footer">

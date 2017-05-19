@@ -18,7 +18,7 @@
   			<div class="mdl-grid" style="background-color:#E0E0E0;">
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Basecamp Guide</h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -42,7 +42,7 @@
   				</div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">CASL Guide</h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -66,7 +66,7 @@
           </div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">English Language Learners Guide</h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -90,7 +90,7 @@
           </div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Environmental and Outdoor Education Guide</h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -114,7 +114,7 @@
   				</div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">ONTAP Guide</h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -138,7 +138,7 @@
   				</div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Single-Source Resource</h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -162,7 +162,7 @@
           </div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Special Education Guide</h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -186,7 +186,7 @@
   				</div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Trillium Guide</h2></h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -210,7 +210,7 @@
           </div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">TWEA Guide</h2>
               </div>
               <div class="mdl-card__supporting-text">
@@ -234,7 +234,7 @@
           </div>
   				<div class="mdl-cell mdl-cell--4-col">
   				  <div class="mdl-card mdl-shadow--2dp" style="margin-bottom:20px; width:100%">
-              <div class="mdl-card__title">
+              <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">WordPress Guide</h2>
               </div>
               <div class="mdl-card__supporting-text">

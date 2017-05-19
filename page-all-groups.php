@@ -15,6 +15,6 @@
 
 <?php get_header(); ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/directory-screen.png" width="100%" />
+<img src="<?php echo get_template_directory_uri(); ?>/discussion-example.jpg" width="100%" />
 
 <?php get_footer();

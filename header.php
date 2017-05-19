@@ -62,8 +62,8 @@
 					<div class="mdl-layout-spacer"></div>
 					<nav class="mdl-navigation mdl-cell--hide-tablet mdl-cell--hide-phone">
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/"><i class="material-icons">home</i> Home</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="<?php echo get_ivoice_member_url('places'); ?>"><i class="material-icons">place</i> My Places</a>
-						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/groups/"><i class="material-icons">group</i> Groups</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/my-places/"><i class="material-icons">place</i> My Places</a>
+						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/all-groups/"><i class="material-icons">group</i> Groups</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/services/"><i class="material-icons">account_balance</i> Services</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/guides/"><i class="material-icons">import_contacts</i> Guides</a>
 						<a class="mdl-navigation__link mdl-typography--text-uppercase" href="/directory"><i class="material-icons">recent_actors</i> 411</a>
